@@ -1,6 +1,6 @@
 # Sunshine Steam Game Importer
 
-This Python script automatically imports your Steam games into Sunshine, a game streaming server, complete with grid images for each game. 
+This Python script automatically imports your INSTALLED Steam games into Sunshine, a game streaming server, complete with grid images for each game. 
 
 Example: 
 ![IMG_0759](https://github.com/user-attachments/assets/365301a4-57d8-4b5e-a9d6-5ba4573af638)
