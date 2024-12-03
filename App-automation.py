@@ -6,11 +6,11 @@ import glob
 from PIL import Image
 import io
 
-
-library_vdf_path = r"D:/Steam/steamapps/libraryfolders.vdf"
-apps_json_path = r"C:/Program Files/Sunshine/config/apps.json"
-STEAMGRIDDB_API_KEY = "0c81c015dcb00272c18ae67431dc7953"
-grids_folder = r"C:\Sunshine grids"
+# Paths
+library_vdf_path = r"C:\Program Files (x86)\Steam\steamapps\libraryfolders.vdf" #Change this to where your steam install is located
+apps_json_path = r"C:\Users\<YourUsername>\AppData\Roaming\Sunshine\apps.json"  # Update to your correct path
+grids_folder = r"C:\Sunshine grids"  # This should be the correct path for Sunshine grids on your computer
+STEAMGRIDDB_API_KEY = "YOUR_API_KEY_HERE" #Make an account on steamgridDB, get the API key under account settings
 
 def get_game_name(app_id):
     """Fetch game name from Steam API."""
