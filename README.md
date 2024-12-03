@@ -23,7 +23,7 @@ Before you begin, ensure you have met the following requirements:
 ## Installation
 
 1. Clone this repository or download the script.
-2. Install the required Python libraries: vdf, glob, pillow and requests
+2. Install the required Python libraries: vdf, glob, pillow and requests. You can do this by installing python (https://www.python.org/downloads/), then opening cmd and running the command "py -m pip install vdf", then glob, then pillow and finally requests. 
 
 ## Configuration
 
@@ -35,6 +35,8 @@ Before running the script, you need to configure a few paths and your API key:
 - `apps_json_path`: Path to your Sunshine apps.json file ( usually found in your main sunshine installation path. Example: C:\Program Files\Sunshine\config\apps.json)
 - `grids_folder`: Path where you want to save the grid images ( I just store mine in c:\grids_folder )
 - `STEAMGRIDDB_API_KEY`: Your SteamGridDB API key
+- `steam_exe_path`: Your steam exe path
+- `sunshine_exe_path`: Your sunshine exe path
 
 ## Usage
 
