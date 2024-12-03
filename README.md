@@ -23,7 +23,7 @@ Before you begin, ensure you have met the following requirements:
 ## Installation
 
 1. Clone this repository or download the script.
-2. Install the required Python libraries:
+2. Install the required Python libraries: vdf, glob, pillow and requests
 
 ## Configuration
 
