@@ -31,9 +31,9 @@ Before running the script, you need to configure a few paths and your API key:
 
 1. Open the script in a text editor.
 2. Update the following variables:
-- `library_vdf_path`: Path to your Steam library VDF file
-- `apps_json_path`: Path to your Sunshine apps.json file
-- `grids_folder`: Path where you want to save the grid images
+- `library_vdf_path`: Path to your Steam library VDF file ( usually found in your main steam installation path. Example: D:\Steam\userdata\<User ID>\config\localconfig.vdf )
+- `apps_json_path`: Path to your Sunshine apps.json file ( usually found in your main sunshine installation path. Example: C:\Program Files\Sunshine\config\apps.json)
+- `grids_folder`: Path where you want to save the grid images ( I just store mine in c:\grids_folder )
 - `STEAMGRIDDB_API_KEY`: Your SteamGridDB API key
 
 ## Usage
