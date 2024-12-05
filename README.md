@@ -65,6 +65,7 @@ The script will:
 - If you encounter any "Access Denied" errors, try running the script with administrator privileges.
 - Ensure your SteamGridDB API key is correct and has not expired.
 - Check that all path variables in the script are correct for your system.
+- On Linux, if you are using flatpak, you may need to replace `f"steam steam://rungameid/{app_id}"` with `f"flatpak run com.valvesoftware.Steam steam://rungameid/{app_id}"`.
 
 ## Contributing
 
