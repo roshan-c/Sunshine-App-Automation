@@ -27,10 +27,6 @@ Before you begin, ensure you have met the following requirements:
 - Linux: You can do this by installing python and pip, then running `python -m pip install -r requirements.txt` in the directory.
 
 
-### Linux:
-1. Clone this repository or download the script.
-2. 
-
 ## Configuration
 
 Before running the script, you need to configure a few paths and your API key:
