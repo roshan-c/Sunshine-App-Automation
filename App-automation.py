@@ -19,6 +19,9 @@ sunshine_exe_path = r"C:\Program Files\Sunshine\sunshine.exe" Put your sunshine 
 
 
 def restart_steam():
+    if os.name != 'nt':
+        print("Stream restarting is not supported. Please, restart Steam manually if any game is missing.")
+        return
     print("Restarting Steam...")
     for proc in psutil.process_iter(['name']):
         if proc.name().lower() == 'steam.exe':
@@ -28,6 +31,8 @@ def restart_steam():
     time.sleep(10)  # Wait for Steam to start up
 
 def restart_sunshine():
+    if os.name != 'nt':
+        print("Sunshine restarting is not supported. Please, restart Sunshine manually.")
     print("Restarting Sunshine...")
     for proc in psutil.process_iter(['name']):
         if proc.name().lower() == 'sunshine.exe':
@@ -60,7 +65,7 @@ def fetch_grid_from_steamgriddb(app_id):
                 image = Image.open(io.BytesIO(grid_response.content))
                 grid_path = os.path.join(grids_folder, f"{app_id}.png")
                 image.save(grid_path, "PNG")
-                return f"C:/Sunshine grids/{app_id}.png"
+                return grid_path
         return None
     except Exception as e:
         print(f"Error fetching grid for AppID {app_id}: {e}")
@@ -131,9 +136,10 @@ print(f"New games to add: {[installed_games[app_id] for app_id in new_games]}")
 for app_id in new_games:
     game_name = installed_games[app_id]
     grid_path = fetch_grid_from_steamgriddb(app_id)
+    cmd = f"steam://rungameid/{app_id}" if os.name == 'nt' else f"steam steam://rungameid/{app_id}"
     new_app = {
         "name": game_name,
-        "cmd": f"steam://rungameid/{app_id}",
+        "cmd": cmd,
         "output": "",
         "detached": "",
         "elevated": "false",
